@@ -13,3 +13,9 @@
     <li>Quick Sort</li>
     <li>Radix Sort</li>
 </ul>
+ 
+#### DS.js file which includes
+<ul>
+    <li>Singly Linked List</li>
+    <li>Doubly Linked List</li>
+</ul>
