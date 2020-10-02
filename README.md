@@ -14,7 +14,7 @@
     <li>Radix Sort</li>
 </ul>
  
-#### DS.js file which includes
+#### DS files include
 <ul>
     <li>Singly Linked List</li>
     <li>Doubly Linked List</li>
