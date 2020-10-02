@@ -18,4 +18,6 @@
 <ul>
     <li>Singly Linked List</li>
     <li>Doubly Linked List</li>
+    <li>Stack</li>
+    <li>Queue</li>
 </ul>
