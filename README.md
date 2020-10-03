@@ -20,4 +20,5 @@
     <li>Doubly Linked List</li>
     <li>Stack</li>
     <li>Queue</li>
+    <li>Trees</li>
 </ul>
