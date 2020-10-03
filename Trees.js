@@ -119,8 +119,72 @@ class BinarySearchTree {
                 return true;
             }
         }
-        
+
         return false;
+    }
+
+    // BST_BFS => Binary Search Tree (Breadth-First Search)
+    BFS () {
+        var node = this.root,
+            data = [],
+            queue = [];
+
+        queue.push(node);
+
+        while (queue.length) {
+            node = queue.shift();
+            data.push(node.value);
+
+            if (node.left) queue.push(node.left);
+            if (node.right) queue.push(node.right);
+        }
+
+        return data;
+    }
+
+    // BST_DFS => Binary Search Tree (Depth-First Search)
+    DFSPreOrder () {
+        var data = [];
+        function traverse (node) {
+            data.push(node.value);
+
+            if (node.left) traverse(node.left);
+            if (node.right) traverse(node.right);
+        }
+
+        traverse(this.root);
+
+        return data;
+    }
+
+    DFSPostOrder () {
+        var data = [];
+        function traverse (node) {
+            if (node.left) traverse(node.left);
+            if (node.right) traverse(node.right);
+
+            data.push(node.value);
+        }
+
+        traverse(this.root);
+
+        return data;
+    }
+
+    DFSInOrder () {
+        var data = [];
+
+        function traverse (node) {
+            if (node.left) traverse(node.left);
+
+            data.push(node.value);
+
+            if (node.right) traverse(node.right);
+        }
+
+        traverse(this.root);
+
+        return data;
     }
 }
 
@@ -132,3 +196,6 @@ tree.insert(11);
 tree.insert(2);
 tree.insert(16);
 tree.insert(7);
+tree.DFSPreOrder();
+tree.DFSPostOrder();
+tree.DFSInOrder();
