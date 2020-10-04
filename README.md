@@ -21,4 +21,5 @@
     <li>Stack</li>
     <li>Queue</li>
     <li>Trees / BFS & DFS</li>
+    <li>Binary Heaps</li>
 </ul>
