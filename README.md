@@ -23,4 +23,5 @@
     <li>Trees / BFS & DFS</li>
     <li>Binary Heaps</li>
     <li>Hash Tables</li>
+    <li>Graphs</li>
 </ul>
